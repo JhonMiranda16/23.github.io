@@ -8,13 +8,17 @@
 <body>
     <div id="resultado"></div>
     <script>
-        function sumar(valor1,valor2)
-        {
-            var resultado=valor1+valor2;
-            document.getElementById("resultado").innerHTML="La función obtiene la siguiente suma "+resultado;
-        }
+       function sumar()
+       {
+         valor1 =parseInt(prompt("Vamos a sumar 2 números. Ingrese numero uno:  "));
+         valor2 =parseInt(prompt("Ingrese numero dos: "));
 
-        sumar(50,80);
+         var resultado=valor1+valor2;
+         document.getElementById("resultado").innerHTML="La funcion obtiene la siguiente suma: "+resultado;
+       }
+
+       sumar()
+
     </script>
 
 </body>
